@@ -1,0 +1,47 @@
+.header{display:flex;
+    padding-top:20px;
+
+
+}
+.header-logo{
+    flex-basis:20%;
+}
+.header-img{
+    height:50px; 
+    margin-top:5px;
+  
+}
+.search-part{
+    flex-basis:30%;
+    display:flex;
+    height:25px;
+    border:1px solid white;
+    border-radius:5px;
+    margin-top:20px;
+    background-color:lightgray;
+
+}
+.search-part i{
+    color:gray;
+}
+.search-part input{
+    width:100%;
+    border:none; 
+    background-color:lightgray;
+}
+nav{
+    flex-basis:50%;
+    display: inherit;
+    justify-content: flex-end;   
+}
+nav a{
+    text-decoration:none;
+    color:#000;
+    margin:10px;
+    padding:10px 20px 10px 20px;   
+}
+nav a:hover{
+    background-color:orange;
+    color:#fff;
+    border-radius:5px;
+}

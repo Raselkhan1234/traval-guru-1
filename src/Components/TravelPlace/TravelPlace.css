@@ -1,0 +1,29 @@
+.product-items{
+    display:inline;
+}
+.product-items img{
+    max-width: 220px;
+    height: 354px;
+    background: linear-gradient(0.12deg, #000000 0.1%, rgba(0, 0, 0, 0) 69.96%);
+    border-radius: 20px;
+    margin-left: 28px;
+    cursor: pointer;
+}
+.product-items span{
+    position: absolute;
+    transform: translate(-197px, 270px);
+}
+.product-items h3{
+    display: block;
+    cursor: pointer;
+    font-family: Bebas Neue;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.product-items img:hover{
+    border:4px solid orange;
+    overflow: hidden;
+}

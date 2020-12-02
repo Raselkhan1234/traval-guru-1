@@ -1,0 +1,173 @@
+.productDetail-page{
+    background: url("https://i.ibb.co/djTJJnp/Rectangle-1.png");
+   height:100vh;
+   width:100vw;
+   max-height: 100%;
+   position: relative;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   background-attachment: fixed;
+   /* filter: brightness(0.5); */
+   overflow: hidden;
+    display:flex;
+
+}
+.productDetail-info{
+    width:40%;
+   margin-left: 22px;
+   margin-top: 50px;
+
+}
+.productDetail-info h1{
+    font-family: Bebas Neue;
+    font-size: 73.6842px; 
+    margin: auto;
+    color:white;
+
+}
+.productDetail-info p{
+    font-family: Montserrat;
+    font-weight: 100;
+    margin-right: 98px;
+    font-size: 17px;
+    line-height: 20px;
+    color: #FFFFFF;
+
+}
+.productDetail-form{
+    width:60%;
+
+}
+.productDetail-form form{
+    margin-left: 192px;
+    margin-top: -70px;
+    position: absolute;
+    transform: translate(55px, 8px);
+    width: 423px;
+    height: 313px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    
+
+}
+.productDetail-form input{
+    width: 376px;
+    height: 33px;
+    left: 40px;
+    border: none;
+    background: #F2F2F2;
+    border-radius: 5px;
+
+}
+input {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid white;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  label {
+    line-height: 2;
+    text-align: left;
+    display: block;
+    margin-bottom: 13px;
+    margin-top: 20px;
+    color: #818181;
+    font-size: 14px;
+    font-weight: 200;
+  }
+  button[type="submit"],
+input[type="submit"] {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 152px;
+    background: #F9A51A;
+border-radius: 5px;
+}
+button[type="submit"]:active,
+input[type="button"]:active,
+input[type="submit"]:active {
+  transition: 0.3s all;
+  transform: translateY(3px);
+  border: 1px solid transparent;
+  opacity: 0.8;
+}
+
+input:disabled {
+  opacity: 0.4;
+}
+
+input[type="button"]:hover {
+  transition: 0.3s all;
+}
+
+#first{
+    position: absolute;
+    transform: translate(22px, 8px);
+
+}
+#origin{
+    position: absolute;
+    transform: translate(-18px, 55px);
+
+}
+#second{
+    position: absolute;
+    transform: translate(23px, 69px);
+
+}
+#destination{
+    position: absolute;
+    transform: translate(-17px, 118px);
+
+}
+#three{
+    position: relative;
+    transform: translate(25px, 137px);
+
+}
+#form{
+    width: 168px;
+    position: absolute;
+    transform: translate(-17px, 122px);
+
+}
+#form-icon{
+
+    position: absolute;
+    transform: translate(160px, 125px);
+
+}
+#four{
+    position: relative;
+    transform: translate(232px, 89px);
+    
+
+}
+#to{
+    width: 168px;
+    position: absolute;
+    transform: translate(190px, 72px);
+}
+
+
+#to-icon{
+    position: absolute;
+    transform: translate(368px, 75px);
+
+}
+#btn{
+    position: absolute;
+    transform: translate(-17px, 128px);
+    height: 60px;
+    cursor: pointer;
+}
+.productDetail-form span{
+    color: #000;
+}

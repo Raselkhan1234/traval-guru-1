@@ -1,25 +1,59 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Components/Header/Header';
+import Home from './Components/Home/Home';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import Destination from './Components/Destination/Destination';
+import Blog from './Components/Blog/Blog';
+import Login from './Components/Login/Login';
+import NoFound from './Components/NoFound/NoFound';
+import ProductDetail from './Components/ProductDetail/ProductDetail';
+import { createContext, useState } from 'react';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
+
+
+export const SelectedProductContext =createContext();
 
 function App() {
+  const [cart,setCart]=useState([]);
+  const [loggedInUser,setLoggedInUser]=useState({});
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <SelectedProductContext.Provider value={[cart,setCart,loggedInUser,setLoggedInUser]}>
+      
+       <Router>
+        <Header/>
+        <Switch>
+          <Route path="/news" >
+            <Home/>
+          </Route>
+          <PrivateRoute path="/destination">
+            <Destination></Destination>
+          </PrivateRoute>
+          <Route path="/blog">
+            <Blog/>
+          </Route>
+          <Route path="/login">
+            <Login/>
+          </Route>
+          <Route exact path="/">
+            <Home/>
+          </Route>
+          <Route path="/place/:productId">
+            <ProductDetail/>
+          </Route>
+          <Route path="*">
+            <NoFound/>
+          </Route>
+        </Switch>
+        </Router>
+    
+    </SelectedProductContext.Provider>
+    
   );
-}
+};
 
 export default App;

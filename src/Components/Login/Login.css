@@ -1,0 +1,201 @@
+form{
+    position: absolute;
+    position: absolute;
+    width: 544px;
+    height: 389px;
+    left: 435px;
+    top: 99px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #ABABAB;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+form h1{
+    position: absolute;
+    left: 6.03%;
+    height: 7%;
+    top: 2.03%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+form input{
+    position: absolute;
+    width: 461px;
+    height: 33px;
+    left: 40px;
+    border: none;
+    border-bottom: 1px solid lightgray;
+}
+form input:focus{
+    outline-color: white;
+    border-bottom: revert;
+}
+#firstName {
+    top: 72px;
+}
+#lastName{
+    
+    top: 118px;
+}
+#user{
+    top: 163px;
+}
+#password{
+    top: 209px;
+}
+#confirm{
+    top: 255px;
+}
+#submit{
+    top: 312px;
+    width: 469px;
+    height: 46px;
+    left: 40px;
+    border:none;
+    flex-direction: row;
+    align-items: center;
+    background: #F9A51A;
+    padding: 14px 165px;
+    cursor: pointer;
+}
+::placeholder{
+    color:black;
+
+}
+form p{
+    position: absolute;
+    width: 314px;
+    height: 22px;
+    left: 153px;
+    top: 346px;
+}
+form span{
+    color: orange;
+    text-decoration: underline;
+    cursor:pointer;
+}
+.or{
+    position: absolute;
+    transform: translate(700px, 417px);
+
+}
+#facebook{
+    position: absolute;
+    width: 461px;
+    height: 37px;
+    background: #FFFFFF;
+    border: 1px solid #C7C7C7;
+    box-sizing: border-box;
+    border-radius: 57px;
+    transform: translate(483px, 425px);
+    cursor: pointer;
+
+}
+#facebook:focus{
+    outline-color: none;
+    outline-style: none;
+    outline-width: none;
+}
+#google{
+    position: absolute;
+    width: 461px;
+    height: 37px;
+    background: #FFFFFF;
+    border: 1px solid #C7C7C7;
+    box-sizing: border-box;
+    border-radius: 57px;
+    transform: translate(483px, 448px);
+    cursor: pointer;
+
+}
+#google:focus{
+    outline-color: none;
+    outline-style:none;
+    outline-width: none;
+}
+#fb-img{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    transform: translate(-154px, -7px);
+}
+#google-img{
+    position: absolute;
+    width: 24px;
+    height: 24.74px;
+    transform: translate(-163px, -5px);
+
+}
+#error{
+    position: absolute;
+    transform: translate(530px, 386px);
+    color: red;
+}
+#success{
+    color:green;
+    position: absolute;
+    transform: translate(608px, 386px);
+}
+#before{
+    display: block;
+    width: 20px;
+    height: 1px;
+    padding-left: 188px;
+    background-color: lightgray;
+    transform: translate(481px, 430px);
+
+    
+
+}
+#after{
+    display: block;
+    width: 20px;
+    height: 1.6px;
+    padding-left: 188px;
+    background-color:lightgray;
+    transform: translate(729px, 430px);
+}
+.log-page{
+
+}
+.log1{
+
+}
+.log2{
+    display: block;
+    position: absolute;
+    transform: translate(379px, 210px);
+
+}
+.checkbox{
+    display: block;
+    width: 12px;
+    height:12px;
+    color:#000;
+    position: absolute;
+    transform: translate(11px, 210px);
+
+}
+input[type="checkbox" i] {
+    color:black;
+    outline: 1px solid black;
+}
+#remember{
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    display: block;
+    position: absolute;
+    transform: translate(81px, 187px);
+    color: black;
+
+}
+.log2 span{
+
+}
