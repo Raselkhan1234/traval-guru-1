@@ -1,6 +1,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { useHistory, useParams } from 'react-router-dom';
+import { Link, useHistory, useParams } from 'react-router-dom';
 import fakeData from '../fakeData/fakeData';
 import './ProductDetail.css';
 import DateRangeIcon from '@material-ui/icons/DateRange';
@@ -62,7 +62,7 @@ const ProductDetail = () => {
                     <input name="to" id="to" onBlur={handleBlur} ref={register({ required: true })} required />
                     <span id="to-icon"><DateRangeIcon></DateRangeIcon> </span>
                  
-                    <input type="submit" onClick={handleBooking} value="Start Booking" id="btn" />
+                   <Link to={"/"+productId}> <input type="submit" onClick={handleBooking} value="Start Booking" id="btn" /></Link>
                     
                 </form>
 

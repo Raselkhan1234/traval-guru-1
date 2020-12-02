@@ -30,7 +30,7 @@ function App() {
           <Route path="/news" >
             <Home/>
           </Route>
-          <PrivateRoute path="/destination">
+          <PrivateRoute path="/:placeId">
             <Destination></Destination>
           </PrivateRoute>
           <Route path="/blog">
