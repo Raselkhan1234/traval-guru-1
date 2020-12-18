@@ -1,0 +1,145 @@
+.destination-container{}
+.destination-container h6{display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #D1D1D1;
+margin:0;}
+.destination-container p{margin-top: 5px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #2B2B2B;
+margin-bottom:0;}
+.destination-container h1{
+    display:inline-block;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 29px;
+    color: #000000;
+    margin: 0;
+    padding-bottom:15px;}
+.destination-page{
+    display:flex;
+
+}
+
+.destination-part-1{
+    width:50%;
+
+}
+.cart1{
+    display:flex;
+
+}
+.cart1-img{
+    width:50%
+}
+.cart1-img img{
+    display: block;
+    width: 280px;
+    height: 145px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom:18px;
+}
+.cart1-detail{
+    width:50%;
+}
+
+.destination-page h4{      font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 17px;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 6px;
+}
+.destination-page p{    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #6A6A6A;
+    margin: 0;
+}
+.destination-page i{font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+    margin-right: 15px;
+}
+.destination-page i img{    height: 9px;}
+.destination-page h5{        display: inline-block;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 33px;
+    color: #000000;
+    margin: 0;}
+.destination-page span{    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 18px;
+    line-height: 22px;
+    color: #6A6A6A;
+    margin-right: 6px;}
+.destination-page strong{    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 14px;
+    line-height: 17px;
+    color: #898989;}
+.cart2{
+    display:flex;
+
+}
+.cart2-img{width:50%;}
+.cart2-img img{
+    display: block;
+    width: 280px;
+    height: 145px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom:18px;
+}
+.cart2-detail{width:50%;}
+.cart3{
+    display:flex;
+
+}
+.cart3-img{
+    width:50%;
+}
+.cart3-img img{
+    display: block;
+    width: 280px;
+    height: 145px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom:18px;
+}
+.cart3-detail{
+    width:50%;
+}
+.destination-part-2{
+    width:50%;
+
+}
+
+.map{
+    position: relative;
+    width: 580px;
+    height: 530px;
+    transform: translate(0px, -34px);
+    border: 1px solid wihite;
+    border: 1px solid white;
+    border-radius: 57px;
+}

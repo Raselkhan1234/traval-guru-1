@@ -4,7 +4,8 @@ import Home from './Components/Home/Home';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  useLocation
 } from "react-router-dom";
 import Destination from './Components/Destination/Destination';
 import Blog from './Components/Blog/Blog';
@@ -18,19 +19,22 @@ import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 export const SelectedProductContext =createContext();
 
 function App() {
+  const location=useLocation();
   const [cart,setCart]=useState([]);
   const [loggedInUser,setLoggedInUser]=useState({});
  
   return (
     <SelectedProductContext.Provider value={[cart,setCart,loggedInUser,setLoggedInUser]}>
       
-       <Router>
+      
+       <div className={`${location.pathname==="/"||location.pathname.includes("news")|| location.pathname.includes("place") ? "main-page" :''}`}>
+       
         <Header/>
         <Switch>
           <Route path="/news" >
             <Home/>
           </Route>
-          <PrivateRoute path="/:placeId">
+          <PrivateRoute path="/travel/:id">
             <Destination></Destination>
           </PrivateRoute>
           <Route path="/blog">
@@ -49,8 +53,10 @@ function App() {
             <NoFound/>
           </Route>
         </Switch>
-        </Router>
+        
     
+       </div>
+     
     </SelectedProductContext.Provider>
     
   );

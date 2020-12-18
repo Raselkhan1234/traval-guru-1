@@ -67,6 +67,7 @@ const Login = () => {
           newUserInfo.success = true;
           console.log(newUserInfo);
           setUsers(newUserInfo);
+          verifyEmail();
           setLoggedInUser(newUserInfo);
           history.replace(from);
           console.log('created successfully');
@@ -139,6 +140,24 @@ const Login = () => {
 
   };
 
+  const verifyEmail=()=>{
+    var user = firebase.auth().currentUser;
+    user.sendEmailVerification().then(function() {
+      // Email sent.
+    }).catch(function(error) {
+      // An error happened.
+    });
+  }
+ const resetPassword=(email)=>{
+  
+  var auth = firebase.auth();
+auth.sendPasswordResetEmail(email).then(function() {
+  // Email sent.
+}).catch(function(error) {
+  // An error happened.
+});
+ }
+
   return (
     <div className="login-page">
 
@@ -172,7 +191,7 @@ const Login = () => {
                 <label htmlFor="Remember me" id="remember" >Remember me</label>
               </div>
               <div className=" log2">
-                <span>Forget password?</span>
+                <span onClick={()=>resetPassword(users.email)}>Forget password?</span>
               </div>
             </div>
         }

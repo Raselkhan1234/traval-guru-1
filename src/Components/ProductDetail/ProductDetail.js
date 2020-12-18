@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Link, useHistory, useParams } from 'react-router-dom';
 import fakeData from '../fakeData/fakeData';
@@ -14,26 +14,46 @@ const ProductDetail = () => {
     const { productId } = useParams();
     console.log(productId);
     const item = fakeData.find(pd => pd.id === productId);
+
+    const[data,setData]=useState({
+        origin:'',
+        destination: '',
+        from: '',
+        to: ''
+    })
     const { register, handleSubmit, watch, errors } = useForm();
     const onSubmit = data => console.log(data);
     const history=useHistory();
-    const handleBooking=()=>{
-        
-        
-        history.push('/destination');
-
-    }
-   
-    // console.log(watch("example"));
-
     const handleBlur=(e)=>{
+        let isFormValid= true;
         if(e.target.name==="form"){
             const isFormValid=/^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9]))$/.test(e.target.value);
         }
         if(e.target.name==="to"){
             const isFormValid=/^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9]))$/.test(e.target.value);
         }
+
+        if(isFormValid){
+            const newDate={...data};
+            newDate[e.target.name]=e.target.value;
+            setData(newDate);
+
+        }
     }
+    const handleBooking=()=>{
+        if (data.from && data.to) {
+            console.log("did");
+            history.push('/destination');
+            
+        }
+        
+        
+
+    }
+   
+    // console.log(watch("example"));
+
+    
 
     return (
         <div className="productDetail-page">
@@ -62,7 +82,7 @@ const ProductDetail = () => {
                     <input name="to" id="to" onBlur={handleBlur} ref={register({ required: true })} required />
                     <span id="to-icon"><DateRangeIcon></DateRangeIcon> </span>
                  
-                   <Link to={"/"+productId}> <input type="submit" onClick={handleBooking} value="Start Booking" id="btn" /></Link>
+                   <Link to={"/travel/"+productId}> <input type="submit" onClick={handleBooking} value="Start Booking" id="btn" /></Link>
                     
                 </form>
 

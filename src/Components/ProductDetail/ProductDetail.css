@@ -1,18 +1,4 @@
-.productDetail-page{
-    background: url("https://i.ibb.co/djTJJnp/Rectangle-1.png");
-   height:100vh;
-   width:100vw;
-   max-height: 100%;
-   position: relative;
-   background-position: center center;
-   background-repeat: no-repeat;
-   background-size: 100% 100%;
-   background-attachment: fixed;
-   /* filter: brightness(0.5); */
-   overflow: hidden;
-    display:flex;
 
-}
 .productDetail-info{
     width:40%;
    margin-left: 22px;
@@ -42,8 +28,8 @@
 .productDetail-form form{
     margin-left: 192px;
     margin-top: -70px;
-    position: absolute;
-    transform: translate(55px, 8px);
+    position: relative;
+    transform: translate(105px, -330px);
     width: 423px;
     height: 313px;
     background: #FFFFFF;
@@ -135,36 +121,38 @@ input[type="button"]:hover {
 #form{
     width: 168px;
     position: absolute;
-    transform: translate(-17px, 122px);
-
+   
+    transform: translate(-17px, 127px);
 }
+
+
 #form-icon{
 
     position: absolute;
-    transform: translate(160px, 125px);
+    transform: translate(134px, 182px);
 
 }
 #four{
     position: relative;
-    transform: translate(232px, 89px);
+    transform: translate(205px, 133px);
     
 
 }
 #to{
     width: 168px;
     position: absolute;
-    transform: translate(190px, 72px);
+    transform: translate(190px, 124px);
 }
 
 
 #to-icon{
     position: absolute;
-    transform: translate(368px, 75px);
+    transform: translate(330px, 179px);
 
 }
 #btn{
     position: absolute;
-    transform: translate(-17px, 128px);
+    transform: translate(-17px, 170px);
     height: 60px;
     cursor: pointer;
 }

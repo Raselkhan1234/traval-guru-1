@@ -9,6 +9,7 @@
 .header-img{
     height:50px; 
     margin-top:5px;
+    filter: invert(1);
   
 }
 .search-part{
@@ -18,30 +19,41 @@
     border:1px solid white;
     border-radius:5px;
     margin-top:20px;
-    background-color:lightgray;
+    background-color: #d3d3d361;
 
 }
 .search-part i{
-    color:gray;
+    color:white
 }
 .search-part input{
     width:100%;
     border:none; 
-    background-color:lightgray;
+    background-color: #d3d3d300;
+    margin-bottom: 0;
 }
+.search-part input:focus{
+    outline-color: gray;
+    
+    padding: 10px;
+}
+.search-part ::placeholder{
+    color:white;
+}
+
 nav{
     flex-basis:50%;
     display: inherit;
     justify-content: flex-end;   
+    margin-top:17px;
 }
 nav a{
     text-decoration:none;
-    color:#000;
+    color:#fff;
     margin:10px;
     padding:10px 20px 10px 20px;   
 }
 nav a:hover{
     background-color:orange;
-    color:#fff;
+    color:#000;
     border-radius:5px;
 }
